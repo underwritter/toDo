@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(125deg, #e49eb5, #8bc4de) fixed;
+   
+}
+
+.addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: gainsboro;
+    width: 500px;
+    height: 10em;
+    border-radius: 10px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+    
+}
+
+.inputStyle{
+    padding:10px;
+    border: 1px solid rgb(126, 126, 206);
+    border-radius: 10px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+    margin: 5px;
+    width: 300px;
+    font-size: 17px;
+}
+
+.btn {
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    opacity: 0.8;
+    color:#fff;
+    font-weight:600;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 197px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: gainsboro;
+    width: 500px;
+    height: max-content;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+}
+.toDo {
+    display: flex;
+    text-align: center;
+    height: max-content;
+    padding: 1em;
+    width: 25em;
+    margin: 15px 0 10px 0;
+    border-radius: 10px;
+    background: linear-gradient(95deg, #6eb7d8, #eb87a8) fixed;
+    letter-spacing: 1px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+    cursor: default;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.toolBar{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.delite {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(/ToDo/img/delite.svg);
+    cursor: pointer;
+    position: absolute;
+    top: -11px;
+    right: 0px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+}
+
+.edit {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(/ToDo/img/edit.svg);
+    cursor: pointer;
+    position: absolute;
+    top: -11px;
+    right: 35px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+}
+
+.check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(/ToDo/img/check.svg);
+    cursor: pointer;
+    position: absolute;
+    top: -11px;
+    right: 70px;
+    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+}
