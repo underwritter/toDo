@@ -1,45 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ToDo/styleSheet.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/ToDo/styleSheet.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1 class="titleBar">Список дел</h1>
+    <h3 class="hint">чтобы ничего не забыть</h3>
 
+    <div class="addTask">
+      <input type="text" class="inputStyle inpuTitle" placeholder="Название" />
+      <input
+        type="text"
+        class="inputStyle inputDescription"
+        placeholder="Описание"
+      />
+      <button class="btnAdd">Добавить</button>
+    </div>
 
-        <h1 class="titleBar">TO DO LIST</h1>
-        <h3 class="hint">чтобы ничего не забыть</h3>
+    <div class="list">
+      
+    </div>
 
-   <div class="addTask">
-
-     <input type="text" class="inputStyle inpuTitle" placeholder="Название">
-     <input type="text" class="inputStyle inputDescription" placeholder="Описание">
-     <button class="btnAdd">Добавить</button>
-
-   </div>  
-    
-   <div class="list">
-        
-     <div class="toDo">
-
-          <span class="title">Покупки</span>
-
-          <div class="toolBar">
-               <div class="delite"></div>
-               <div class="edit"></div>
-               <div class="check"></div> 
-          </div>
-
-          <span class="discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis error neque accusamus. Ratione maxime eos et repellendus nam, ullam, magnam quo voluptatum blanditiis distinctio laboriosam similique est sit ex at hic, sequi accusamus aliquam deleniti modi. Delectus, aliquam officiis. Aspernatur repellendus, quos quia tempore dignissimos harum quo non id, commodi voluptatum saepe recusandae necessitatibus! Neque sequi ipsa suscipit voluptatem? Illum ipsum eligendi voluptatibus optio esse laborum rerum voluptates ex ab quas, sapiente dolor quasi dolores magni fugiat. Exercitationem minus necessitatibus ad voluptas quos dolorem dignissimos dicta, odit numquam dolores placeat sint maiores temporibus eligendi a tempore quod aperiam soluta eum nisi praesentium ut. Maxime, voluptas?</span>
-
-        </div>
-     
-   </div>
-
-
-   <script src="/ToDo/code.js"></script>
-</body>
+    <script src="/ToDo/code.js"></script>
+  </body>
 </html>
