@@ -53,10 +53,8 @@ const deliteTask = (e) => {
 
 const editeTask = (e) => {
   if (document.querySelectorAll("[contenteditable=false]")) {
-    document
-      .querySelectorAll("[contenteditable=false]")
-      .forEach((e) => {e.setAttribute("contentEditable", true)
-     
+    document.querySelectorAll("[contenteditable=false]").forEach((e) => {
+      e.setAttribute("contentEditable", true);
     });
   }
 };
@@ -68,7 +66,7 @@ const saveTask = (e) => {
       toDos[i].description = e.innerHTML;
     });
     localStorage.setItem("toDos", JSON.stringify(toDos));
-  } 
+  }
 };
 
 const resetForm = (e) => {
