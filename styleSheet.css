@@ -1,181 +1,173 @@
 @font-face {
-    font-family: 'Caveat', cursive;
-    src: local('Caveat'),
-        url(/ToDo/fonts/Caveat-Regular.ttf),
-        url(/ToDo/fonts/Caveat-Medium.ttf),
-        url(/ToDo/fonts/Caveat-SemiBold.ttf),
-        url(/ToDo/fonts/Caveat-Bold.ttf)
+  font-family: "Caveat", cursive;
+  src: local("Caveat"), url(/fonts/Caveat-Bold.ttf),
+    url(/fonts/Caveat-Medium.ttf), url(/fonts/Caveat-SemiBold.ttf),
+    url(/fonts/Caveat-Bold.ttf);
 }
 
-
 * {
-    box-sizing: border-box;
-    font-family: 'Caveat', cursive;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(125deg, #e49eb5, #8bc4de) fixed;
-   
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(125deg, #e49eb5, #8bc4de) fixed;
 }
 
 .titleBar {
-    font-weight: 700;
-    font-size: 30px;
-    margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
 }
 
 .hint {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 10px 0;
 }
 
 .addTask {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: gainsboro;
-    width: 500px;
-    height: 10em;
-    border-radius: 10px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: gainsboro;
+  width: 500px;
+  height: 10em;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
 }
 
-.inputStyle{
-    padding:10px;
-    border: 1px solid rgb(126, 126, 206);
-    border-radius: 10px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    margin: 5px;
-    width: 300px;
-    font-size: 17px;
-    font-weight: 400;
+.inputStyle {
+  padding: 10px;
+  border: 1px solid rgb(126, 126, 206);
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  width: 300px;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .btnAdd {
-    padding:10px;
-    border:none;
-    background-color:#3F51B5;
-    opacity: 0.8;
-    color:#fff;
-    font-weight:600;
-    border-radius: 10px;
-    width: 100px;
-    margin-left: 197px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s ease;
+  padding: 10px;
+  border: none;
+  background-color: #3f51b5;
+  opacity: 0.8;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 197px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .btnAdd:hover {
-    background-color:#fff;
-    color:#3F51B5;
+  background-color: #fff;
+  color: #3f51b5;
 }
 
 .list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: gainsboro;
-    width: 500px;
-    height: max-content;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: gainsboro;
+  width: 500px;
+  height: max-content;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
 }
 .toDo {
-    display: flex;
-    text-align: center;
-    height: max-content;
-    padding: 1em;
-    width: 25em;
-    margin: 15px 0 10px 0;
-    border-radius: 10px;
-    background: linear-gradient(95deg, #6eb7d8, #eb87a8) fixed;
-    letter-spacing: 1px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    cursor: default;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  text-align: center;
+  height: max-content;
+  padding: 1em;
+  width: 25em;
+  margin: 15px 0 10px 0;
+  border-radius: 10px;
+  background: linear-gradient(95deg, #6eb7d8, #eb87a8) fixed;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
-.toolBar{
-    display: flex;
-    flex-direction: row-reverse;
+.toolBar {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .delite {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-image: url(/ToDo/img/delite.svg);
-    cursor: pointer;
-    position: absolute;
-    top: -11px;
-    right: 0px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(/img/delite.svg);
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 0px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
 }
 
 .delite:hover {
-    box-shadow:0 0 8px 4px rgba(79, 36, 221, 0.771);
+  box-shadow: 0 0 8px 4px rgba(79, 36, 221, 0.771);
 }
 
 .edit {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-image: url(/ToDo/img/edit.svg);
-    cursor: pointer;
-    position: absolute;
-    top: -11px;
-    right: 35px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(/img/edit.svg);
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 35px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
 }
 
 .edit:hover {
-    box-shadow:0 0 8px 4px rgba(79, 36, 221, 0.771);
+  box-shadow: 0 0 8px 4px rgba(79, 36, 221, 0.771);
 }
 
 .check {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-image: url(/ToDo/img/check.svg);
-    cursor: pointer;
-    position: absolute;
-    top: -11px;
-    right: 70px;
-    box-shadow:0 0 8px 4px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(/img/check.svg);
+  cursor: pointer;
+  position: absolute;
+  top: -11px;
+  right: 70px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
 }
 
 .check:hover {
-    box-shadow:0 0 8px 4px rgba(79, 36, 221, 0.771);
+  box-shadow: 0 0 8px 4px rgba(79, 36, 221, 0.771);
 }
 
-.title{
-    font-weight: 700;
-    font-size: 25px;
+.title {
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .discription {
-    font-weight: 400;
-    font-size: 15px;
-    width: 360px;
-    border-top: 1px solid gray;
-    margin-top: 10px;
-
-
+  font-weight: 400;
+  font-size: 15px;
+  width: 360px;
+  border-top: 1px solid gray;
+  margin-top: 10px;
 }
-
